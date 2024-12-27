@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lohith portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
+</head>
+<body>
+    <nav id="desktop-nav">
+     <div class="logo">Lohith Babu N</div>
+     <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">skills</a></li>
+          <li><a href="#intentships">intentships</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+   </nav>
+   <nav id="hamburger-nav">
+    <div class="logo">Lohith Babu N</div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#skills" onclick="toggleMenu()">skills</a></li>
+        <li><a href="#intentships" onclick="toggleMenu()">intentships</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+ <!--  profile Section -->
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/Lprofile-pic.png" alt="Lohith profile picture" />
+    </div>
+    <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Lohith Babu N</h1>
+        <p class="section__text__p2">Cloud Enthusiast</p>
+        <div class="btn-container">
+            <button
+              class="btn btn-color-2"
+              onclick="window.open('./assets/resume-example.pdf')"
+            >
+              Download CV
+            </button>
+            <button class="btn btn-color-1" onclick="location.href='./#contact'">
+              Contact Info
+            </button>
+          </div>
+          <div id="socials-container">
+            <img
+              src="./assets/linkedin.png"
+              alt="My LinkedIn profile"
+              class="icon"
+              onclick="location.href='https://www.linkedin.com/in/lohithbabu-n/'"
+            />
+            <img
+              src="./assets/github.png"
+              alt="My Github profile"
+              class="icon"
+              onclick="location.href='https://github.com/lohithbabun'"
+            />
+          </div>
+    </div>
+ </section>
+ <!-- about Section -->
+ <section id="about">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img
+          src="./assets/laboutimage.png"
+          alt="Profile picture"
+          class="about-pic"
+        />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          
+          <div class="details-container">
+            <img
+              src="./assets/education.png"
+              alt="Education icon"
+              class="icon"
+            />
+            <h3>Education</h3>
+            <p>P.U. Vijay Vittal Composite , Mysuru <br /> course:- PCMB</p>
+            <p>B.E. Mysore University School Of Engineering , Mysuru<br />course:- Computer Science & Design </p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            I’m Lohith Babu N, a passionate and curious Computer Science graduate specializing in DevOps and Cloud Computing. With a strong foundation in technology and a knack for problem-solving, I’m eager to step into the professional world and contribute to building efficient and innovative solutions.
+
+I believe in the power of hard work and staying true to the tasks I take on. Whether it’s setting up a CI/CD pipeline, exploring new cloud tools, or diving deep into automation, I approach every challenge with a mix of determination and creativity.
+          </p>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+  <!-- Skills Section -->
+  <section id="skills" class="skills-container">
+    <h2>Skills</h2>
+    <ul class="skills-list">
+      <!-- AWS -->
+      <li class="skill-item" onclick="toggleSkill(this)">
+        <div class="skill-front">
+          <span class="skill-icon"><i class="fab fa-aws"></i></span>
+          <span class="skill-name">AWS</span>
+        </div>
+        <div class="skill-back">
+          Expertise in AWS services like EC2, S3, Lambda, IAM, and CloudFormation for scalable cloud solutions.
+        </div>
+      </li>
+      <!-- Docker -->
+      <li class="skill-item" onclick="toggleSkill(this)">
+        <div class="skill-front">
+          <span class="skill-icon"><i class="fas fa-box"></i></span>
+          <span class="skill-name">Docker</span>
+        </div>
+        <div class="skill-back">
+          Proficient in containerizing applications using Docker for streamlined development and deployment.
+        </div>
+      </li>
+      <!-- Kubernetes -->
+      <li class="skill-item" onclick="toggleSkill(this)">
+        <div class="skill-front">
+          <span class="skill-icon"><i class="fab fa-kubernetes"></i></span>
+          <span class="skill-name">Kubernetes</span>
+        </div>
+        <div class="skill-back">
+          Skilled in orchestrating containerized applications using Kubernetes for high availability.
+        </div>
+      </li>
+      <!-- Jenkins -->
+      <li class="skill-item" onclick="toggleSkill(this)">
+        <div class="skill-front">
+          <span class="skill-icon"><i class="fas fa-tools"></i></span>
+          <span class="skill-name">Jenkins</span>
+        </div>
+        <div class="skill-back">
+          Expertise in CI/CD pipelines using Jenkins for automated build and deployment processes.
+        </div>
+      </li>
+      <!-- Git/GitHub -->
+      <li class="skill-item" onclick="toggleSkill(this)">
+        <div class="skill-front">
+          <span class="skill-icon"><i class="fab fa-git-alt"></i></span>
+          <span class="skill-name">Git/GitHub</span>
+        </div>
+        <div class="skill-back">
+          Proficient in version control and collaboration using Git and GitHub.
+        </div>
+      </li>
+      <!-- Ansible -->
+      <li class="skill-item" onclick="toggleSkill(this)">
+        <div class="skill-front">
+          <span class="skill-icon"><i class="fas fa-network-wired"></i></span>
+          <span class="skill-name">Ansible</span>
+        </div>
+        <div class="skill-back">
+          Experienced in automating configuration management and deployments using Ansible.
+        </div>
+      </li>
+      <!-- Python -->
+      <li class="skill-item" onclick="toggleSkill(this)">
+        <div class="skill-front">
+          <span class="skill-icon"><i class="fab fa-python"></i></span>
+          <span class="skill-name">Python</span>
+        </div>
+        <div class="skill-back">
+          Skilled in Python programming for scripting, automation, and data processing.
+        </div>
+      </li>
+      <!-- Bash Scripting -->
+      <li class="skill-item" onclick="toggleSkill(this)">
+        <div class="skill-front">
+          <span class="skill-icon"><i class="fas fa-terminal"></i></span>
+          <span class="skill-name">Bash Scripting</span>
+        </div>
+        <div class="skill-back">
+          Proficient in Bash scripting for automating system tasks and processes.
+        </div>
+      </li>
+      <!-- Java -->
+      <li class="skill-item" onclick="toggleSkill(this)">
+        <div class="skill-front">
+          <span class="skill-icon"><i class="fab fa-java"></i></span>
+          <span class="skill-name">Java</span>
+        </div>
+        <div class="skill-back">
+          Expertise in developing robust applications using Java.
+        </div>
+      </li>
+      <!-- Linux -->
+      <li class="skill-item" onclick="toggleSkill(this)">
+        <div class="skill-front">
+          <span class="skill-icon"><i class="fab fa-linux"></i></span>
+          <span class="skill-name">Linux</span>
+        </div>
+        <div class="skill-back">
+          Skilled in Linux system administration and shell scripting.
+        </div>
+      </li>
+      <!-- Terraform -->
+      <li class="skill-item" onclick="toggleSkill(this)">
+        <div class="skill-front">
+          <span class="skill-icon"><i class="fas fa-cloud"></i></span>
+          <span class="skill-name">Terraform</span>
+        </div>
+        <div class="skill-back">
+          Experienced in Infrastructure as Code (IaC) using Terraform for scalable deployments.
+        </div>
+      </li>
+      <!-- Maven -->
+      <li class="skill-item" onclick="toggleSkill(this)">
+        <div class="skill-front">
+          <span class="skill-icon"><i class="fab fa-java"></i></span>
+          <span class="skill-name">Maven</span>
+        </div>
+        <div class="skill-back">
+          Knowledgeable in using Apache Maven for project build automation, dependency management, and deployment.
+        </div>
+      </li>
+      <!-- Tomcat -->
+      <li class="skill-item" onclick="toggleSkill(this)">
+        <div class="skill-front">
+          <span class="skill-icon"><i class="fas fa-server"></i></span>
+          <span class="skill-name">Tomcat</span>
+        </div>
+        <div class="skill-back">
+          Proficient in deploying Java-based web applications on Apache Tomcat servers.
+        </div>
+      </li>
+      <!-- Front-end Web Development -->
+      <li class="skill-item" onclick="toggleSkill(this)">
+        <div class="skill-front">
+          <span class="skill-icon"><i class="fas fa-code"></i></span>
+          <span class="skill-name">Front-end Web Development</span>
+        </div>
+        <div class="skill-back">
+          Skilled in HTML, CSS, and JavaScript for creating responsive and interactive web applications.
+        </div>
+      </li>
+    </ul>
+    
+   
+  </section>
+  <!-- Internship Section -->
+<section id="intentships">
+  <p class="section__text__p1">Experience</p>
+  <h1 class="title">Internship</h1>
+  <div class="internship-container">
+    <!-- Internship 1 -->
+    <div class="internship-card">
+      <h3 class="internship-title">DevOps Intern</h3>
+      <p class="internship-organization">Tech Innovators Pvt. Ltd.</p>
+      <p class="internship-duration">June 2023 - August 2023</p>
+      <p class="internship-description">
+        Worked on setting up CI/CD pipelines using Jenkins and Docker. Automated deployment processes and optimized existing workflows to reduce downtime by 30%.
+      </p>
+    </div>
+    <!-- Internship 2 -->
+    <div class="internship-card">
+      <h3 class="internship-title">Cloud Computing Intern</h3>
+      <p class="internship-organization">Cloud Experts Inc.</p>
+      <p class="internship-duration">January 2023 - April 2023</p>
+      <p class="internship-description">
+        Built scalable cloud solutions using AWS services like EC2, S3, and CloudFormation. Gained hands-on experience with infrastructure as code using Terraform.
+      </p>
+    </div>
+    <!-- Internship 3 -->
+    <div class="internship-card">
+      <h3 class="internship-title">Software Development Intern</h3>
+      <p class="internship-organization">Code Factory Solutions</p>
+      <p class="internship-duration">September 2022 - December 2022</p>
+      <p class="internship-description">
+        Contributed to the development of a web application using React.js and Node.js. Enhanced application performance and implemented key features that improved user engagement.
+      </p>
+    </div>
+  </div>
+ 
+</section>
+<!-- project Section -->
+<section id="projects">
+  <h1 class="title">Projects</h1>
+  <div class="projects-container">
+    <!-- DevOps Project Card -->
+    <div class="project-card">
+      <div class="project-card-front">
+        <img src="./assets/devops.png" alt="DevOps Project" class="project-image">
+        <h3>DevOps Domain</h3>
+        <p>Exploring CI/CD pipelines and automation.</p>
+      </div>
+      <div class="project-card-back">
+        <h3>DevOps Projects</h3>
+        <p><b>Project 1:</b> CI/CD Pipeline using Jenkins and Docker</p>
+        <a href="https://github.com/example/devops-project1" target="_blank">View on GitHub</a>
+        <p><b>Project 2:</b> Kubernetes Deployment for Microservices</p>
+        <a href="https://github.com/example/devops-project2" target="_blank">View on GitHub</a>
+      </div>
+    </div>
+    <!-- Cloud Project Card -->
+    <div class="project-card">
+      <div class="project-card-front">
+        <img src="./assets/cloud.png" alt="Cloud Project" class="project-image">
+        <h3>Cloud Domain</h3>
+        <p>Innovating cloud infrastructure solutions.</p>
+      </div>
+      <div class="project-card-back">
+        <h3>Cloud Projects</h3>
+        <p><b>Project 1:</b> Serverless App using AWS Lambda</p>
+        <a href="https://github.com/example/cloud-project1" target="_blank">View on GitHub</a>
+        <p><b>Project 2:</b> Multi-Region Deployment with Terraform</p>
+        <a href="https://github.com/example/cloud-project2" target="_blank">View on GitHub</a>
+      </div>
+    </div>
+    <!-- Web Development Project Card -->
+    <div class="project-card">
+      <div class="project-card-front">
+        <img src="./assets/web development.png" alt="Web Development Project" class="project-image">
+        <h3>Web Development</h3>
+        <p>Building user-friendly websites and apps.</p>
+      </div>
+      <div class="project-card-back">
+        <h3>Web Development Projects</h3>
+        <p><b>Project 1:</b> Portfolio Website using HTML/CSS/JS</p>
+        <a href="https://github.com/example/web-project1" target="_blank">View on GitHub</a>
+        <p><b>Project 2:</b> E-commerce Website with ReactJS</p>
+        <a href="https://github.com/example/web-project2" target="_blank">View on GitHub</a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- contact Section -->
+<section id="contact">
+  <p class="section__text__p1">Get in Touch</p>
+  <h1 class="title">Contact Me</h1>
+  <div class="contact-info-upper-container">
+    <div class="contact-info-container">
+      <img
+        src="./assets/email.png"
+        alt="Email icon"
+        class="icon contact-icon email-icon"
+      />
+      <p><a href="mailto:lohithbabu96@gmail.com">lohithbabu96@gmail.com</a></p>
+    </div>
+    <div class="contact-info-container">
+      <img
+        src="./assets/linkedin.png"
+        alt="LinkedIn icon"
+        class="icon contact-icon"
+      />
+      <p><a href="https://www.linkedin.com/in/lohithbabu-n/">lohithbabu-n</a></p>
+    </div>
+  </div>
+</section>
+  <!-- fotter-->
+<footer>
+  <nav>
+    <div class="nav-links-container">
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">skills</a></li>
+        <li><a href="#intentships">intentships</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <p>Copyright &#169; 2024 Lohith Babu N. All Rights Reserved.</p>
+</footer>
+  <script src="script.js"></script>
+</body>
+</html>
